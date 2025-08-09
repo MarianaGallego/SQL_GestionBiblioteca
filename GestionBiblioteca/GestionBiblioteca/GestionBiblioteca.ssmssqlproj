@@ -22,23 +22,29 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="CreacionBD.sql">
+        <FileNode Name="1_CreacionBD.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local)\:False:sa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>(local)\</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>CreacionBD.sql</FullPath>
+          <FullPath>1_CreacionBD.sql</FullPath>
         </FileNode>
-        <FileNode Name="CreacionTablas.sql">
+        <FileNode Name="2_CreacionTablas.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local)\:False:sa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>(local)\</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>CreacionTablas.sql</FullPath>
+          <FullPath>2_CreacionTablas.sql</FullPath>
         </FileNode>
-        <FileNode Name="CreacionTiposDeDatos.sql">
+        <FileNode Name="3_CreacionTiposDeDatos.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local)\:False:sa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>(local)\</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>CreacionTiposDeDatos.sql</FullPath>
+          <FullPath>3_CreacionTiposDeDatos.sql</FullPath>
+        </FileNode>
+        <FileNode Name="4_AsignarTiposDeDatoDeUsuario.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(local)\:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(local)\</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>4_AsignarTiposDeDatoDeUsuario.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

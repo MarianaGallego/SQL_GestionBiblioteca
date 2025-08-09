@@ -13,7 +13,7 @@ CREATE TABLE Usuario (
 ------> Crear tabla TipoDeIdentidad
 CREATE TABLE TipoDeIdentidad (
 	idTipoIdentidad CHAR(3) PRIMARY KEY NOT NULL,
-	descripcion VARCHAR(100) NOT NULL
+	descripcionIdentidad VARCHAR(100) NOT NULL
 )
 
 ------> Crear tabla Registro
@@ -120,7 +120,7 @@ CREATE TABLE LibroStock (
 
 ------> Crear tabla Adquisicion
 CREATE TABLE Adquisicion (
-	idAdquisicion INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	idAdquisicion CHAR(3) PRIMARY KEY NOT NULL,
 	descripcionAdquisicion VARCHAR(1000)
 )
 
@@ -187,7 +187,7 @@ CREATE TABLE EstadoLibro (
 CREATE TABLE LibroPrestamoEstadolibro (
 	idLibro INT,
 	idPrestamo INT,
-	idEstadoLibro INT,
+	idEstadoLibro CHAR(3),
 
 	CONSTRAINT PK_LibroPrestamoEstadolibro PRIMARY KEY(idLibro, idPrestamo, idEstadoLibro)
 )
@@ -195,13 +195,13 @@ CREATE TABLE LibroPrestamoEstadolibro (
 ------> Crear tabla EstadoDePrestamo
 CREATE TABLE EstadoDePrestamo (
 	idEstadoPrestamo CHAR(3) PRIMARY KEY NOT NULL,
-	descripcion VARCHAR(1000)
+	descripcionEstadoPrestamo VARCHAR(100)
 )
 
 ------> Crear tabla PrestamoEstadodeprestamo
 CREATE TABLE PrestamoEstadodeprestamo (
 	idPrestamo INT,
-	idEstadoPrestamo INT,
+	idEstadoPrestamo CHAR(3),
 
 	CONSTRAINT PK_PrestamoEstadodeprestamo PRIMARY KEY(idPrestamo, idEstadoPrestamo)
 )
@@ -217,7 +217,7 @@ CREATE TABLE Devolucion (
 ------> Crear tabla EstadoDeDevolucion
 CREATE TABLE EstadoDeDevolucion (
 	idEstadoDevolucion CHAR(3) PRIMARY KEY NOT NULL,
-	descripcion VARCHAR(1000)
+	descripcionEstadoDevolucion VARCHAR(100)
 )
 
 ------> Crear tabla PrestamoDevolucion
@@ -256,7 +256,7 @@ CREATE TABLE MultaPrestamoDevolucion (
 ------> Crear tabla EstadoDeMulta
 CREATE TABLE EstadoDeMulta (
 	idEstadoDeMulta CHAR(3) PRIMARY KEY NOT NULL,
-	descripcion VARCHAR(1000)
+	descripcionEstadoMulta VARCHAR(100)
 )
 
 ------> Crear tabla MultaEstadodemulta
